@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace TermProject_AG
 {
@@ -8,6 +7,9 @@ namespace TermProject_AG
         static void Main(string[] args)
         {
             Console.WriteLine("Connect Four - Term Project");
+
+            GameController game = new GameController();
+            game.StartGame();
         }
     }
 }
