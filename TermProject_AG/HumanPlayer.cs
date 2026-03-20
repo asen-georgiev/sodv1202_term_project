@@ -10,9 +10,18 @@ namespace TermProject_AG
 
         public override int GetMove()
         {
-            Console.Write("Enter column (1-7): ");
-            int column = int.Parse(Console.ReadLine());
-            return column - 1;
+            while (true)
+            {
+                Console.Write("Enter column (1-7): ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int column))
+                {
+                    return column - 1;
+                }
+
+                Console.WriteLine("Invalid input. Please enter a number.");
+            }
         }
     }
 }
