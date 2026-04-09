@@ -27,6 +27,8 @@ namespace TermProject_AG
 
         public void DisplayBoard()
         {
+            Console.WriteLine("1 2 3 4 5 6 7");
+
             for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < columns; c++)
@@ -35,6 +37,8 @@ namespace TermProject_AG
                 }
                 Console.WriteLine();
             }
+
+            Console.WriteLine();
         }
 
         public bool DropDisc(int column, char symbol)
