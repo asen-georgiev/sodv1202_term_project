@@ -11,8 +11,23 @@ namespace TermProject_AG
         public GameController()
         {
             board = new Board();
-            player1 = new HumanPlayer('X');
-            player2 = new HumanPlayer('O');
+
+            Console.WriteLine("Select Game Mode:");
+            Console.WriteLine("1 - Human vs Human");
+            Console.WriteLine("2 - Human vs Computer");
+
+            string choice = Console.ReadLine();
+
+            if (choice == "2")
+            {
+                player1 = new HumanPlayer('X');
+                player2 = new ComputerPlayer('O');
+            }
+            else
+            {
+                player1 = new HumanPlayer('X');
+                player2 = new HumanPlayer('O');
+            }
         }
 
         public void StartGame()
