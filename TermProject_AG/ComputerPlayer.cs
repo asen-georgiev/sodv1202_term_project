@@ -12,7 +12,17 @@ namespace TermProject_AG
 
         public override int GetMove()
         {
-            return random.Next(0, 7);
+            int column;
+
+            do
+            {
+                column = random.Next(0, 7);
+            }
+            while (false);
+
+            Console.WriteLine($"Computer chooses column {column + 1}");
+
+            return column;
         }
     }
 }
