@@ -27,18 +27,21 @@ namespace TermProject_AG
 
         public void DisplayBoard()
         {
-            Console.WriteLine("1 2 3 4 5 6 7");
+            Console.WriteLine("\n 1 2 3 4 5 6 7");
 
             for (int r = 0; r < rows; r++)
             {
+                Console.Write("|");
+
                 for (int c = 0; c < columns; c++)
                 {
-                    Console.Write(grid[r, c] + " ");
+                    Console.Write(grid[r, c] + "|");
                 }
+
                 Console.WriteLine();
             }
 
-            Console.WriteLine();
+            Console.WriteLine("-----------------");
         }
 
         public bool DropDisc(int column, char symbol)
