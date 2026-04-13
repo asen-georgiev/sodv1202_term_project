@@ -6,7 +6,10 @@ namespace TermProject_AG
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Connect Four - Term Project");
+            Console.WriteLine("===== CONNECT FOUR =====");
+            Console.WriteLine("Drop your disc into a column.");
+            Console.WriteLine("First player to connect four wins.");
+            Console.WriteLine();
 
             GameController game = new GameController();
             game.StartGame();
